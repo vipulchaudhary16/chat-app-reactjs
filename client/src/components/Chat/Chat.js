@@ -49,10 +49,11 @@ const Chat = ({ location }) => {
       event.preventDefault();
       if(message) {
         socket.emit('sendMessage', message, () => setMessage(''));
+        console.log(message);
+        console.log(messages);
         console.log("message Sent")
       }
     }
-    console.log(messages , message);
 
   return (
     <div className="outerContainer">
