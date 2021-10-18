@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 html, body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -7,6 +9,29 @@ html, body {
   #root {
     height: 100vh;
   }
+
+  .main{
+    height: 100vh;
+    background-color: #040422;
+  }
+
+  .iconDiv{
+    color: rgb(47, 231, 19);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .iconDiv p{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.2rem;
+  }
+
+  .appIcon{
+    width: 5%;
+    filter: invert(1);
+    padding: 0 10px;
+  }
   
   * {
     box-sizing: border-box;
@@ -14,16 +39,14 @@ html, body {
   
   .joinOuterContainer {
     display: flex;
-    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: column;
     text-align: center;
-    height: 100vh;
     align-items: center;
-    background-color: #040422;
-    /* background : url(../../../public/JoiBg.jpg) */
   }
   
   .joinInnerContainer {
-    width: 20%;
+    width: 30%;
   }
   
   .joinInput {
@@ -35,7 +58,7 @@ html, body {
   
   .heading {
     color: white;
-    font-size: 2.5em;
+    font-size:1.5rem;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
   }
@@ -49,20 +72,24 @@ html, body {
       border-radius: 5px;
       display: inline-block;
       border: none;
-      width: 100%;
+      width: auto;
   }
   
   .mt-20 {
     margin-top: 20px;
   }
   
-  @media (min-width: 320px) and (max-width: 480px) {
-    .joinOuterContainer {
-      height: 100%;
-    }
+  @media (min-width: 320px) and (max-width: 680px) {
+    
   
     .joinInnerContainer {
       width: 90%;
+    }
+
+    .appIcon{
+      width: 18%;
+      filter: invert(1);
+      padding: 0 10px;
     }
   
   

@@ -21,7 +21,7 @@ const Message = ({ message :{text , user} , name   }) => {
                 <p className="sentText pr-10">
                     {trimmedName}
                 </p>
-                <div className="messageBox bgBlue">
+                <div className="messageBox  sentBg">
                     <p className="messageText colorWhite">
                     {ReactEmoji.emojify(text)}
                     </p>
@@ -29,8 +29,8 @@ const Message = ({ message :{text , user} , name   }) => {
             </div>
         )
         :(
-            <div className="messageContainer justifyStart">
-                <div className="messageBox bgLight">
+            <div className="messageContainer  justifyStart">
+                <div className="messageBox receiveBg">
                     <p className="messageText colorDark">
                     {ReactEmoji.emojify(text)}
                     </p>
