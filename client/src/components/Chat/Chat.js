@@ -8,7 +8,7 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-const ENDPOINT = 'https://react-chat-room-vc.herokuapp.com/';
+const ENDPOINT = 'localhost:5000';
 let socket;
 
 const Chat = ({ location }) => {
@@ -34,7 +34,6 @@ const Chat = ({ location }) => {
   useEffect(() => {
     socket.on('message', message => {
       setMessages([ ...messages, message ]); 
-      console.log("Sending the welcome message");
     });
     
     },[messages]);
@@ -43,9 +42,6 @@ const Chat = ({ location }) => {
       event.preventDefault();
       if(message) {
         socket.emit('sendMessage', message, () => setMessage(''));
-        console.log(message);
-        console.log(messages);
-        console.log("message Sent")
       }
     }
 

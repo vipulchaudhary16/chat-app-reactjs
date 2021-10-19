@@ -4,3 +4,14 @@
     flex: auto;
     background:rgb(4, 51, 81);
   }
+
+  ::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2f4b58;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #365563;
+}

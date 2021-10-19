@@ -4,7 +4,6 @@
 
 .form {
     display: flex;
-    border:1px solid white;
   }
   
   .formDiv{
@@ -12,13 +11,14 @@
   }
   
   .input {
-    background: transparent;
+    border:1px solid rgba(255, 255, 255, 0.142);
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     padding: 0 3%;
     width: 92%;
     font-size: 1rem;
-    color: white;
+    margin: 0 5px;
+    margin-bottom: 5px;
   }
   
   input:focus, textarea:focus, select:focus{
@@ -30,6 +30,7 @@
     background: transparent;
     align-items: center;
     justify-content: center;
+    margin-right: 5px;
   }
   
   .sendButton {
