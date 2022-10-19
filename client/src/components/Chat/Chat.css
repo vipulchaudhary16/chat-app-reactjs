@@ -1,36 +1,42 @@
 .outerContainer {
-    display: flex;
-    align-items: center;
-    background-color: #1A1A1D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding: 1rem; */
+}
+
+body {
+  background-color: #1A1A1D;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 100%;
+  max-height: 100vh;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .outerContainer {
+    justify-content: none;
+    width: 100%;
+    align-items: none;
+    background-color: red;
   }
-  
-  body{
-    background-color: #1A1A1D;
-  }
-  
+
   .container {
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #FFFFFF;
-    border-radius: 8px;
-    width: 35%;
-    max-height: 100vh;
+    width: 100%;
+    max-height: 700px;
+    margin: 0;
   }
-  
-  @media (min-width: 320px) and (max-width: 800px) {
-    .outerContainer {
-      justify-content: none;
-      width: 100%;
-      align-items: none;
-      background-color: red;
-    }
-    
-    .container {
-      width: 100%;
-      max-height: 700px;
-      margin: 0;
-    }
-  }
-  
+}

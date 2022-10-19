@@ -1,32 +1,40 @@
 .infoBar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #1a870d;
-    border-radius: 4px 4px 0 0;
-    height: 60px;
-    width: 100%;
-  }
-  
-  .leftInnerContainer {
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    margin-left: 5%;
-    color: white;
-  }
-  
-  .rightInnerContainer {
-    display: flex;
-    flex: 0.5;
-    justify-content: flex-end;
-    margin-right: 5%;
-  }
-  
-  .onlineIcon {
-    margin-right: 5%;
-    height: 30px;
-  }
-  .closeIcon {
-    height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a870d;
+  border-radius: 4px 4px 0 0;
+  height: 60px;
+  width: 100%;
+  background-color: #202c33;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.rightInnerContainer button {
+  background: red;
+  padding: 7px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+  height: 30px;
 }

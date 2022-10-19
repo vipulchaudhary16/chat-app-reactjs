@@ -1,18 +1,14 @@
 .messageBox {
-  background: #F3F3F3;
-  color: white;
   display: inline-block;
   max-width: 80%;
   height:auto;
-  padding: 0 13px;
+  padding: 0 10px;
   margin: 5px;
 }
 
 .messageText {
   width: 100%;
   letter-spacing: 0;
-  padding: 5px;
-  float: left;
   word-wrap: break-word;
 }
 
@@ -25,27 +21,21 @@
   justify-content: flex-end;
 }
 
-.sentText {
+.sentText-sender {
   display: flex;
   align-items: center;
   font-family: Helvetica;
-  color: #828282;
-}
-
-.pl-10 {
-  padding-left: 10px;
-}
-
-.pr-10 {
-  padding-right: 10px;
+  color: #53bdeb;
 }
 
 .justifyStart {
   justify-content: flex-start;
+  margin-left: 1rem;
 }
 
 .justifyEnd {
   justify-content: flex-end;
+  margin-right: 1rem;
 }
 
 .colorWhite {
@@ -57,12 +47,12 @@
 }
 
 .sentBg {
-  background: #050706;
-  /* top-left top-right bottom-right bottom-left */
+  background: #005c4b;
   border-radius:20px 20px 0px 20px;
 }
 
 .receiveBg {
+  background: #202c33;
   border-radius:0px 20px 20px 20px;
-  background: white;
+  color: white;
 }

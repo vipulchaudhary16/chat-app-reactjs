@@ -2,7 +2,8 @@
     padding: 5% 0;
     overflow: auto;
     flex: auto;
-    background:rgb(4, 51, 81);
+    background: #2d2d2d;
+
   }
 
   ::-webkit-scrollbar{
